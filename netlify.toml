@@ -1,0 +1,6 @@
+# Static site: no build step is required.
+# This file overrides the build settings configured in the Netlify UI.
+[build]
+  publish = "."
+  command = "echo 'Static site - no build step required'"
+  functions = "netlify/functions"
