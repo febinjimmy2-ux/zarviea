@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customise a Hamper | Zarviea</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">✳</span><span>ZARVIEA<small>GIFT STUDIO</small></span></a><button class="menu-toggle" onclick="toggleMenu()">☰</button><nav id="nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a class="active" href="customize.html">Customise</a><a href="reviews.html">Reviews</a><a href="about.html">Our Story</a><a class="nav-cta" href="contact.html">Contact</a></nav></header>
+<main class="page-wrap"><div class="page-heading"><p class="eyebrow">MADE JUST FOR THEM</p><h1>Create your <em>own hamper.</em></h1><p class="muted">Choose a few favourites and we'll put together your gift.</p></div>
+<div class="builder-layout"><form id="custom-form" class="builder-card" onsubmit="sendCustomOrder(event)">
+<label>1. Choose an occasion<select id="occasion"><option>Birthday</option><option>Wedding</option><option>Anniversary</option><option>Just Because</option></select></label>
+<label>2. Choose your hamper size<select id="size" onchange="updateEstimate()"><option value="499">Small · ₹499</option><option value="899" selected>Medium · ₹899</option><option value="1299">Large · ₹1,299</option></select></label>
+<fieldset><legend>3. Pick your goodies</legend><div class="check-grid">
+<label><input type="checkbox" value="250" data-name="Chocolates" onchange="updateEstimate()"> Chocolates <span>₹250</span></label>
+<label><input type="checkbox" value="350" data-name="Perfume" onchange="updateEstimate()"> Perfume <span>₹350</span></label>
+<label><input type="checkbox" value="200" data-name="Scented candle" onchange="updateEstimate()"> Scented candle <span>₹200</span></label>
+<label><input type="checkbox" value="300" data-name="Mug" onchange="updateEstimate()"> Personalised mug <span>₹300</span></label>
+<label><input type="checkbox" value="400" data-name="Soft toy" onchange="updateEstimate()"> Soft toy <span>₹400</span></label>
+<label><input type="checkbox" value="300" data-name="Dry fruits" onchange="updateEstimate()"> Dry fruits <span>₹300</span></label>
+<label><input type="checkbox" value="450" data-name="Skincare set" onchange="updateEstimate()"> Skincare set <span>₹450</span></label>
+<label><input type="checkbox" value="200" data-name="Greeting card" onchange="updateEstimate()"> Greeting card <span>₹200</span></label>
+</div></fieldset>
+<label>4. Gift message<textarea id="gift-message" rows="3" placeholder="Write a short message..."></textarea></label>
+<label>Your name<input id="customer-name" required placeholder="Your name"></label>
+<label>Delivery details<textarea id="delivery" rows="2" placeholder="Delivery area / address (optional)"></textarea></label>
+<button class="btn btn-gold full" type="submit">Send custom enquiry on WhatsApp</button><p class="form-hint">This is an enquiry estimate. Final price and delivery will be confirmed before ordering.</p></form>
+<aside class="estimate-card"><p class="eyebrow">YOUR ESTIMATE</p><div class="estimate-total" id="estimate">₹899</div><p class="muted">Starting size + selected items</p><div class="estimate-line"><span>Selected extras</span><strong id="extras-total">₹0</strong></div><div class="estimate-line total-line"><span>Estimated total</span><strong id="estimate-bottom">₹899</strong></div><img src="images/collection.png" alt="Gift hamper inspiration"></aside></div></main>
+<footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">✳</span><span>ZARVIEA<small>GIFT STUDIO</small></span></a><small>© <span id="year"></span> Zarviea Gift Studio.</small></footer><script src="script.js"></script></body></html>

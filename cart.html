@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your Bag | Zarviea</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">✳</span><span>ZARVIEA<small>GIFT STUDIO</small></span></a><button class="menu-toggle" onclick="toggleMenu()">☰</button><nav id="nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="customize.html">Customise</a><a href="reviews.html">Reviews</a><a href="about.html">Our Story</a><a class="nav-cta" href="contact.html">Contact</a></nav></header>
+<main class="page-wrap"><div class="page-heading"><p class="eyebrow">YOUR SELECTION</p><h1>Your gift <em>bag.</em></h1></div><div id="cart-items" class="cart-items"></div><section class="cart-checkout">
+<h2>Delivery details</h2>
+<p class="muted">Add your details so Zarviea can reply about your order.</p>
+<div class="form-grid">
+<label>Your name<input id="order-name" type="text" placeholder="Name" required></label>
+<label>Contact number<input id="order-phone" type="tel" placeholder="Your phone number" required></label>
+<label class="full">Delivery address<textarea id="order-address" rows="3" placeholder="Full delivery address" required></textarea></label>
+<label class="full">Order note (optional)<textarea id="order-note" rows="2" placeholder="Any special instructions"></textarea></label>
+</div>
+</section>
+<div class="cart-bottom"><strong>Total: <span id="cart-total">₹0</span></strong><button class="btn btn-gold" onclick="checkoutCart()">Buy via WhatsApp</button></div>
+<p id="checkout-status" class="muted" role="status" aria-live="polite"></p></main><footer class="footer"><small>© <span id="year"></span> Zarviea Gift Studio.</small></footer><script src="script.js"></script></body></html>
